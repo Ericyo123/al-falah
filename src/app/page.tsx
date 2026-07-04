@@ -171,8 +171,7 @@ export default function Home() {
                 className="bento-image"
               />
               <div className="bento-overlay blue-overlay"></div>
-              <div className="bento-content-overlay">
-                <span className="bento-badge">Global Network</span>
+              <div className="bento-content-overlay justify-end">
                 <div>
                   <h3 className="bento-title">KSA, UAE, Qatar & Kuwait Partnerships</h3>
                   <p className="bento-desc">
