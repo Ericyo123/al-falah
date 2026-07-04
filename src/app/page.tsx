@@ -171,7 +171,7 @@ export default function Home() {
                 alt="Global Network" 
                 className="bento-image"
               />
-              <div className="bento-overlay"></div>
+              <div className="bento-overlay blue-overlay"></div>
               <div className="bento-content-overlay">
                 <span className="bento-badge">Global Network</span>
                 <div>

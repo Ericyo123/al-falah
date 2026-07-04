@@ -1039,6 +1039,15 @@ input::placeholder, textarea::placeholder {
   z-index: 2;
 }
 
+.bento-overlay.blue-overlay {
+  background: linear-gradient(180deg, 
+    rgba(0, 32, 77, 0.95) 0%, 
+    rgba(0, 32, 77, 0.8) 30%, 
+    rgba(0, 32, 77, 0) 55%, 
+    rgba(0, 0, 0, 0.85) 100%
+  );
+}
+
 .bento-content-overlay {
   position: relative;
   z-index: 3;
