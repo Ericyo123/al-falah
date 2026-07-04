@@ -133,7 +133,7 @@ export default function Home() {
       </div>
 
       {/* ===== WHY CHOOSE US (BENTO GRID LAYOUT) ===== */}
-      <section style={{ padding: "100px 0 80px", backgroundColor: "var(--bg-color-secondary)" }}>
+      <section style={{ padding: "100px 0 160px", backgroundColor: "var(--bg-color-secondary)" }}>
         <div className="widescreen-container">
           <div className="bento-grid">
             {/* Box 1: Why Choose Us Text Block (Col 1, Row 1) */}
@@ -150,7 +150,7 @@ export default function Home() {
             {/* Box 2: Vetted & Verified (Col 2, Row 1) */}
             <div className="bento-item image-bg">
               <img 
-                src="/assets/images/screening.jpg" 
+                src="/assets/images/rigorous_screening_clean.png" 
                 alt="Vetted & Verified" 
                 className="bento-image"
               />
@@ -168,7 +168,7 @@ export default function Home() {
             {/* Box 3: Global Network (Col 3, Row 1 & 2 - Vertically Elongated) */}
             <div className="bento-item image-bg row-span-2">
               <img 
-                src="/assets/images/global_network_accent.png" 
+                src="/assets/images/gcc_map_clean.png" 
                 alt="Global Network" 
                 className="bento-image"
               />
