@@ -128,15 +128,15 @@ export default function Home() {
       </section>
 
       {/* Low-opacity halfway divider line */}
-      <div style={{ display: "flex", justifyContent: "center", backgroundColor: "var(--bg-color)" }}>
+      <div style={{ display: "flex", justifyContent: "center", backgroundColor: "var(--bg-color-secondary)" }}>
         <div style={{ width: "50%", height: "1px", backgroundColor: "rgba(0, 102, 204, 0.12)" }}></div>
       </div>
 
       {/* ===== WHY CHOOSE US (BENTO GRID LAYOUT) ===== */}
-      <section style={{ padding: "100px 0 80px", backgroundColor: "var(--bg-color)" }}>
+      <section style={{ padding: "100px 0 80px", backgroundColor: "var(--bg-color-secondary)" }}>
         <div className="widescreen-container">
           <div className="bento-grid">
-            {/* Box 1: Why Choose Us Text Block */}
+            {/* Box 1: Why Choose Us Text Block (Col 1, Row 1) */}
             <div className="bento-item text-block">
               <span className="accent-pill-label" style={{ marginBottom: "16px", display: "inline-flex" }}>Why Choose Us</span>
               <h2 style={{ fontSize: "40px", fontWeight: 900, color: "var(--text-primary)", letterSpacing: "-1px", lineHeight: "1.15", margin: "12px 0 20px" }}>
@@ -147,32 +147,33 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Box 2: Warm Beige - Vetted & Verified */}
-            <div className="bento-item warm-beige">
-              <h4 className="bento-header-text">Vetted & Verified</h4>
-              <p className="bento-desc" style={{ color: "var(--text-secondary)" }}>
-                Rigorous trade tests, medical clearances, and professional interviews ensure that every single candidate is perfectly qualified and ready.
-              </p>
+            {/* Box 2: Vetted & Verified (Col 2, Row 1) */}
+            <div className="bento-item image-bg">
+              <img 
+                src="/assets/images/screening.jpg" 
+                alt="Vetted & Verified" 
+                className="bento-image"
+              />
+              <div className="bento-overlay"></div>
+              <div className="bento-content-overlay justify-end">
+                <div>
+                  <h3 className="bento-title">Rigorous Screening</h3>
+                  <p className="bento-desc">
+                    Trade tests, medical clearances, and professional interviews ensure that every single candidate is perfectly qualified and ready.
+                  </p>
+                </div>
+              </div>
             </div>
 
-            {/* Box 3: Cool Grey - Decades of Trust */}
-            <div className="bento-item cool-grey">
-              <h4 className="bento-header-text">Decades of Trust</h4>
-              <p className="bento-desc" style={{ color: "var(--text-secondary)" }}>
-                Over 25 years of compliant recruitment across GCC nations. Built on absolute transparency, zero hidden charges, and legal integrity.
-              </p>
-            </div>
-
-            {/* Box 4: Span 2 - Global Network */}
-            <div className="bento-item image-bg col-span-2">
+            {/* Box 3: Global Network (Col 3, Row 1 & 2 - Vertically Elongated) */}
+            <div className="bento-item image-bg row-span-2">
               <img 
                 src="/assets/images/global_network_accent.png" 
                 alt="Global Network" 
                 className="bento-image"
               />
-              <div className="bento-overlay"></div>
-              <div className="bento-content-overlay">
-                <span className="bento-badge">Global Network</span>
+              <div className="bento-overlay blue-overlay"></div>
+              <div className="bento-content-overlay justify-end">
                 <div>
                   <h3 className="bento-title">KSA, UAE, Qatar & Kuwait Partnerships</h3>
                   <p className="bento-desc">
@@ -182,20 +183,37 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Box 5: Span 1 - Deployment Speed */}
+            {/* Box 4: Deployment Speed (Col 1, Row 2) */}
             <div className="bento-item image-bg">
               <img 
-                src="/assets/images/fast_sourcing_accent.png" 
+                src="/assets/images/zerodelays.jpg" 
                 alt="Deployment Speed" 
                 className="bento-image"
               />
               <div className="bento-overlay"></div>
-              <div className="bento-content-overlay">
-                <span className="bento-badge">Deployment Speed</span>
+              <div className="bento-content-overlay justify-end">
                 <div>
                   <h3 className="bento-title">Zero Delays Sourcing</h3>
                   <p className="bento-desc">
                     Optimized end-to-end processing and flight mobilization that keeps deployment times to a absolute minimum.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Box 5: Decades of Trust (Col 2, Row 2) */}
+            <div className="bento-item image-bg">
+              <img 
+                src="/assets/images/decades_of_trust_accent.png" 
+                alt="Decades of Trust" 
+                className="bento-image"
+              />
+              <div className="bento-overlay"></div>
+              <div className="bento-content-overlay justify-end">
+                <div>
+                  <h3 className="bento-title">Over 25 Years of Excellence</h3>
+                  <p className="bento-desc">
+                    Compliant recruitment across GCC nations. Built on absolute transparency, zero hidden charges, and legal integrity.
                   </p>
                 </div>
               </div>
