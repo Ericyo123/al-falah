@@ -223,7 +223,7 @@ export default function Home() {
       </section>
 
       {/* ===== SECTION 3: SPECIALIZED INDUSTRIES (DYNAMIC BACKGROUND LIST) ===== */}
-      <section style={{ position: "relative", padding: "70px 0 50px", backgroundColor: "#050a11", overflow: "hidden" }}>
+      <section style={{ position: "relative", padding: "120px 0 100px", backgroundColor: "#050a11", overflow: "hidden" }}>
         
         {/* Dynamic Backgrounds */}
         {[
@@ -251,7 +251,7 @@ export default function Home() {
         {/* Dark Overlay for Text Readability */}
         <div style={{
           position: "absolute", top: 0, left: 0, width: "100%", height: "100%",
-          background: "linear-gradient(to right, rgba(5,10,17,0.95) 0%, rgba(5,10,17,0.85) 40%, rgba(5,10,17,0.7) 100%)",
+          background: "linear-gradient(to right, rgba(5,10,17,0.85) 0%, rgba(5,10,17,0.5) 40%, rgba(5,10,17,0.2) 100%)",
           zIndex: 1
         }}></div>
 
@@ -260,7 +260,7 @@ export default function Home() {
             
             {/* Left Column: Massive Typography List */}
             <div className="col-lg-7">
-              <span className="accent-pill-label" style={{ backgroundColor: "rgba(255,255,255,0.1)", border: "1px solid rgba(255,255,255,0.2)", color: "#ffffff", marginBottom: "20px", display: "inline-flex", backdropFilter: "blur(4px)" }}>
+              <span style={{ color: "#ffffff", fontSize: "14px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "2px", marginBottom: "20px", display: "block" }}>
                 Sectors We Serve
               </span>
               <h2 className="text-white-force" style={{ fontSize: "46px", fontWeight: 900, letterSpacing: "-1.5px", lineHeight: "1.1", margin: "0 0 24px" }}>
