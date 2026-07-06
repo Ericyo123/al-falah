@@ -132,7 +132,7 @@ export default function Home() {
         <div style={{ width: "50%", height: "1px", backgroundColor: "rgba(0, 102, 204, 0.12)" }}></div>
       </div>
 
-      {/* ===== WHY CHOOSE US (ICON/STAT-DRIVEN GRID) ===== */}
+      {/* ===== WHY CHOOSE US (IMAGE BENTO GRID) ===== */}
       <section style={{ padding: "100px 0 160px", backgroundColor: "var(--bg-color-secondary)" }}>
         <div className="widescreen-container">
           <div className="bento-grid">
@@ -148,89 +148,44 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Card 2: 25+ Years — Stat Card */}
-            <div className="bento-item bento-stat-card">
-              <div>
-                <div className="bento-icon-wrap">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 8v4l3 3" />
-                    <circle cx="12" cy="12" r="10" />
-                  </svg>
-                </div>
-                <div className="bento-stat-number"><span>25+</span></div>
-                <div className="bento-stat-label">Years of Excellence</div>
-              </div>
-              <p className="bento-stat-desc">
-                Compliant recruitment across GCC nations since 1998. Built on absolute transparency, zero hidden charges, and legal integrity.
-              </p>
-            </div>
-
-            {/* Card 3: GCC Partnerships — Dark Feature Card (Tall) */}
-            <div className="bento-item bento-feature-card row-span-2">
-              <div>
-                <div className="bento-icon-wrap">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="10" />
-                    <path d="M2 12h20" />
-                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                  </svg>
-                </div>
-                <div className="bento-stat-number"><span>6</span></div>
-                <div className="bento-stat-label">GCC Nation Partnerships</div>
-                <p className="bento-stat-desc">
-                  Direct recruitment partnerships with blue-chip companies, leading contractors, and top-tier industrial corporations across the Gulf region.
-                </p>
-                <div className="bento-country-tags">
-                  <span className="bento-country-tag">Saudi Arabia</span>
-                  <span className="bento-country-tag">UAE</span>
-                  <span className="bento-country-tag">Qatar</span>
-                  <span className="bento-country-tag">Kuwait</span>
-                  <span className="bento-country-tag">Bahrain</span>
-                  <span className="bento-country-tag">Oman</span>
-                </div>
-              </div>
-              <div style={{ marginTop: "auto", paddingTop: "24px", borderTop: "1px solid rgba(59, 130, 246, 0.12)" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#10b981" }}></div>
-                  <span style={{ fontSize: "13px", fontWeight: 600, color: "rgba(255,255,255,0.5)", letterSpacing: "0.5px", textTransform: "uppercase" }}>Active in all 6 nations</span>
-                </div>
+            {/* Card 2: Rigorous Screening — Image Card */}
+            <div className="bento-item image-bg">
+              <img src="/assets/images/bento_screening.png" alt="Rigorous Screening" className="bento-image" />
+              <div className="bento-overlay"></div>
+              <div className="bento-content-overlay">
+                <h3 className="bento-title">Rigorous Screening</h3>
+                <p className="bento-desc">Trade tests, medical clearances, and professional interviews ensure every candidate is perfectly qualified.</p>
               </div>
             </div>
 
-            {/* Card 4: 1,200+ Placed — Stat Card */}
-            <div className="bento-item bento-stat-card">
-              <div>
-                <div className="bento-icon-wrap">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                    <circle cx="9" cy="7" r="4" />
-                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                  </svg>
-                </div>
-                <div className="bento-stat-number"><span>1,200+</span></div>
-                <div className="bento-stat-label">Candidates Deployed</div>
+            {/* Card 3: GCC Partnerships — Tall Image Card */}
+            <div className="bento-item image-bg row-span-2">
+              <img src="/assets/images/bento_gcc.png" alt="GCC Nation Partnerships" className="bento-image" />
+              <div className="bento-overlay dark-overlay"></div>
+              <div className="bento-content-overlay">
+                <h3 className="bento-title">KSA, UAE, Qatar &amp; Kuwait</h3>
+                <p className="bento-desc">Direct recruitment partnerships with blue-chip companies and top-tier industrial corporations across 6 GCC nations.</p>
               </div>
-              <p className="bento-stat-desc">
-                Optimized end-to-end processing and flight mobilization that keeps deployment times to an absolute minimum.
-              </p>
             </div>
 
-            {/* Card 5: SLBFE Licensed — Trust Badge Card */}
-            <div className="bento-item bento-trust-card">
-              <div>
-                <div className="bento-icon-wrap">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                    <path d="M9 12l2 2 4-4" />
-                  </svg>
-                </div>
-                <div className="bento-stat-number"><span>2888</span></div>
-                <div className="bento-stat-label">SLBFE Government License</div>
+            {/* Card 4: Zero Delays — Image Card */}
+            <div className="bento-item image-bg">
+              <img src="/assets/images/zerodelays.jpg" alt="Zero Delays Sourcing" className="bento-image" />
+              <div className="bento-overlay"></div>
+              <div className="bento-content-overlay">
+                <h3 className="bento-title">Zero Delays Sourcing</h3>
+                <p className="bento-desc">Optimized end-to-end processing and flight mobilization that keeps deployment times to an absolute minimum.</p>
               </div>
-              <p className="bento-stat-desc">
-                Fully licensed by the Sri Lanka Bureau of Foreign Employment. Proud recipient of the SLBFE 3-Star Golden Award for compliance.
-              </p>
+            </div>
+
+            {/* Card 5: SLBFE Licensed — Image Card */}
+            <div className="bento-item image-bg">
+              <img src="/assets/images/bento_compliance.png" alt="SLBFE Licensed" className="bento-image" />
+              <div className="bento-overlay"></div>
+              <div className="bento-content-overlay">
+                <h3 className="bento-title">SLBFE License 2888</h3>
+                <p className="bento-desc">Fully government-approved. Proud recipient of the SLBFE 3-Star Golden Award for compliance and excellence.</p>
+              </div>
             </div>
 
           </div>
