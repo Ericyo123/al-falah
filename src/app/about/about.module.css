@@ -1271,3 +1271,46 @@
   }
 }
 
+
+/* =========================================
+   Mobile Responsiveness
+   ========================================= */
+@media (max-width: 991px) {
+  .pageHeader { padding: 60px 0; }
+  .pageTitle { font-size: 36px; }
+  .whoWeAre { padding: 60px 0; }
+  
+  .imageGridMasonry { flex-direction: column; padding-right: 0; }
+  .gridColLeft, .gridColRight { width: 100%; }
+  .gridImgTall, .gridImgShort, .gridImgTallest { height: auto; aspect-ratio: 4/3; }
+  
+  .titleAlt, .title { font-size: 32px !important; }
+  .tabsArea { flex-direction: column; gap: 15px; }
+  .tabsList, .tabContentPanel { width: 100%; }
+  
+  .orbitalTeam { padding: 60px 0; }
+  .ring, .avatar { display: none; }
+  .orbitalCenter { transform: none; top: 0; left: 0; }
+  
+  .marqueeSection { padding: 40px 0; }
+  .marqueeItem { font-size: 36px; }
+  
+  .whyChooseUsCenter { padding: 60px 0; }
+  .centerImageWrapper { margin: 40px 0; }
+  
+  .testimonialsSection { padding: 60px 0; }
+  .tCardFlow { width: 280px; }
+  
+  .expNumber { font-size: 60px; }
+  .expPlus { font-size: 30px; }
+  
+  .contactRow { flex-direction: column; gap: 20px; }
+}
+
+@media (max-width: 575px) {
+  .pageTitle { font-size: 28px; }
+  .titleAlt, .title { font-size: 26px !important; }
+  .marqueeItem { font-size: 28px; }
+  .btnGroupCenter { flex-direction: column; gap: 15px; }
+  .centerImg { width: 100%; height: auto; }
+}
