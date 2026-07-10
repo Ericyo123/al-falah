@@ -1,24 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
 
-/* Import the original bootstrap and theme styles from src/styles relatively */
-@import '../styles/libraries/bootstrap/css/bootstrap.min.css';
-@import '../styles/libraries/pbminfotech-base-icons/css/pbminfotech-base-icons.css';
-@import '../styles/libraries/pbmit-xhyre-icon/pbmit_xhyre.css';
-@import '../styles/libraries/stroke-gap-icons/style.css';
-@import '../styles/libraries/font-awesome/css/all.min.css';
-@import '../styles/css/all.css';
-@import '../styles/css/core.css';
-@import '../styles/css/theme.css';
-@import '../styles/css/responsive.css';
-@import '../styles/css/dynamic-default-style.css';
-@import '../styles/css/global-color.css';
-
-/* Import component-specific stylesheets */
-@import '../styles/css/header/header-style-1.css';
-@import '../styles/css/icon-heading/icon-heading-style-1.css';
-@import '../styles/css/fid/fid-style-2.css';
-@import '../styles/css/client/client-style-1.css';
-@import '../styles/css/team/team-style-1.css';
 
 /* ===== PREMIUM LIGHT THEME ===== */
 :root {
