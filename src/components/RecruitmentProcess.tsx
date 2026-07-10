@@ -100,7 +100,7 @@ export default function RecruitmentProcess() {
   ];
 
   return (
-    <section style={{ padding: "100px 0", backgroundColor: "#fcfaf8", position: "relative", overflow: "hidden" }}>
+    <section style={{ padding: "140px 0", backgroundColor: "#fcfaf8", position: "relative", overflow: "hidden" }}>
       
       {/* ===== ICON ANIMATIONS ===== */}
       <style>{`
@@ -156,8 +156,7 @@ export default function RecruitmentProcess() {
         {/* Centered Header */}
         <div style={{ textAlign: "center", maxWidth: "700px", margin: "0 auto 80px" }}>
           <h2 style={{ fontSize: "38px", fontWeight: 800, margin: "0", color: "var(--text-primary)", lineHeight: 1.35 }}>
-            Steps of Recruitment Process: Our <br />
-            Deployment <span style={{ color: "var(--primary-color)" }}>Advantages.</span>
+            Steps of Recruitment Process
           </h2>
           {/* Hand-drawn SVG underline */}
           <div style={{ display: "flex", justifyContent: "center", marginTop: "8px" }}>

@@ -10,7 +10,7 @@ export default function Footer() {
       color: "rgba(255,255,255,0.75)", 
       fontFamily: "var(--font-body)",
       position: "relative",
-      marginTop: "80px" 
+      paddingTop: "1px"
     }}>
 
       {/* Floating CTA Card */}
@@ -75,11 +75,12 @@ export default function Footer() {
           
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", position: "relative", zIndex: 2 }}>
             <Link href="/contact" style={{ 
+              fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
               backgroundColor: "#ffffff", 
               color: "var(--primary-color)", 
               padding: "14px 28px", 
               borderRadius: "10px", 
-              fontWeight: 800, 
+              fontWeight: 400, 
               fontSize: "14px",
               textDecoration: "none", 
               transition: "all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)", 
@@ -88,13 +89,14 @@ export default function Footer() {
               alignItems: "center",
               gap: "8px"
             }} onMouseEnter={(e)=>e.currentTarget.style.transform="translateY(-3px)"} onMouseLeave={(e)=>e.currentTarget.style.transform="translateY(0)"}>
-              Book Consultation <i className="fas fa-arrow-right"></i>
+              Book consultation <i className="fas fa-arrow-right"></i>
             </Link>
             <Link href="/about" className="text-white-force" style={{ 
+              fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
               backgroundColor: "rgba(255,255,255,0.05)", 
               padding: "14px 28px", 
               borderRadius: "10px", 
-              fontWeight: 700, 
+              fontWeight: 400, 
               fontSize: "14px",
               textDecoration: "none", 
               border: "1px solid rgba(255,255,255,0.2)", 
@@ -103,7 +105,7 @@ export default function Footer() {
               display: "inline-flex",
               alignItems: "center"
             }} onMouseEnter={(e)=>{e.currentTarget.style.backgroundColor="rgba(255,255,255,0.15)"; e.currentTarget.style.transform="translateY(-3px)";}} onMouseLeave={(e)=>{e.currentTarget.style.backgroundColor="rgba(255,255,255,0.05)"; e.currentTarget.style.transform="translateY(0)";}}>
-              Learn More
+              Learn more
             </Link>
           </div>
         </div>

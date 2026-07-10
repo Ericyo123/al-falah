@@ -222,7 +222,7 @@ export default function JobsPage() {
       {/* Titlebar Banner */}
       <section className={styles.titlebar}>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
-          <span className="section-label" style={{ color: "rgba(255,255,255,0.7)" }}>Careers</span>
+          <span className="accent-pill-label text-white-force">Careers</span>
           <h1>Explore Job Opportunities</h1>
           <div className={styles.breadcrumb}>
             <Link href="/" style={{ color: "rgba(255,255,255,0.7)" }}>Home</Link>

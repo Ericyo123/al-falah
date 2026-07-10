@@ -130,7 +130,7 @@ export default function Header() {
               </div>
               <div className="header-divider" style={{ width: "1px", height: "32px", backgroundColor: "rgba(0,0,0,0.08)" }}></div>
               <Link href="/contact" className="btn-modern header-apply-btn" style={{ padding: "12px 28px", fontSize: "14px" }}>
-                Apply Now
+                Apply now
               </Link>
               <button
                 onClick={toggleMobileMenu}
@@ -203,7 +203,7 @@ export default function Header() {
         </nav>
         <div style={{ marginTop: "auto", paddingTop: "30px", borderTop: "1px solid var(--border-color)" }}>
           <Link href="/contact" className="btn-modern" onClick={closeMobileMenu} style={{ display: "block", textAlign: "center", width: "100%" }}>
-            Apply Now
+            Apply now
           </Link>
           <div style={{ marginTop: "20px", fontSize: "14px", color: "var(--text-muted)", lineHeight: "1.8" }}>
             <div>📞 +94 112 669 489</div>

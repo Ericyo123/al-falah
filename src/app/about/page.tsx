@@ -94,7 +94,7 @@ export default function AboutPage() {
             {/* RIGHT SIDE: Content */}
             <div className="col-lg-6">
               <div className={styles.sectionHeaderAlt}>
-                <span className={styles.subtitleAlt}>/ WHO ARE WE /</span>
+                <span className="accent-pill-label" style={{ marginBottom: '15px' }}>Who we are</span>
                 <h2 className={styles.titleAlt}>
                   Global Manpower <span className={styles.textBlueAlt}>Recruitment</span><br/>
                   <span className={styles.textBlueAlt}>Agency</span> in Sri Lanka.
@@ -223,7 +223,7 @@ export default function AboutPage() {
 
           {/* Center Content */}
           <div className={styles.orbitalCenter}>
-            <span className={styles.subtitleAlt} style={{ display: 'inline-block', marginBottom: '15px' }}>/ RECOGNITION /</span>
+            <span className="accent-pill-label" style={{ marginBottom: '15px' }}>Recognition</span>
             <h2 className={styles.titleAlt} style={{ fontSize: '54px', marginBottom: '25px', lineHeight: '1.2' }}>
               SLBFE 3-Star <br/><span className={styles.textBlueAlt}>Golden Award</span>
             </h2>
@@ -245,7 +245,7 @@ export default function AboutPage() {
         <div className="container">
           
           <div className={styles.sectionHeaderCentered} style={{ marginBottom: '60px' }}>
-            <span className={styles.subtitleAlt} style={{ display: 'inline-block', marginBottom: '15px' }}>/ WHY CHOOSE US? /</span>
+            <span className="accent-pill-label" style={{ marginBottom: '15px' }}>Why choose us</span>
             <h2 className={styles.titleAlt} style={{ fontSize: '42px', margin: '0', lineHeight: '1.2' }}>
               Why Choose Al Falah Travels & Tours?
             </h2>

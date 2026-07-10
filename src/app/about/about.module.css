@@ -563,7 +563,7 @@
 
 /* Testimonials */
 .testimonialsSection {
-  padding: 100px 0;
+  padding: 100px 0 180px;
 }
 
 .testimonialCard {
@@ -1105,7 +1105,7 @@
 
 /* Testimonials Flow Layout */
 .testimonialsSection {
-  padding: 40px 0 60px;
+  padding: 40px 0 140px;
   background: #f8fafc; /* Slightly lighter premium grey */
   overflow: hidden;
   position: relative;

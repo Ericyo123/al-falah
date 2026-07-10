@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import styles from "./about/about.module.css";
 import HeroSlider from "@/components/HeroSlider";
 import RecruitmentProcess from "@/components/RecruitmentProcess";
 
@@ -90,12 +91,12 @@ export default function Home() {
       <HeroSlider />
 
       {/* ===== SECTION 2: WHO WE ARE (ABOUT US) ===== */}
-      <section style={{ padding: "100px 0", backgroundColor: "var(--bg-color)" }}>
+      <section style={{ padding: "120px 0 60px", backgroundColor: "var(--bg-color)" }}>
         <div className="widescreen-container">
           <div className="row align-items-center">
             {/* Left Column: Corporate Content */}
             <div className="col-lg-6 mb-5 mb-lg-0" style={{ paddingRight: "40px" }}>
-              <span className="accent-pill-label" style={{ marginBottom: "16px", display: "inline-flex" }}>Who We Are</span>
+              <span className="accent-pill-label" style={{ marginBottom: "16px", display: "inline-flex" }}>Who we are</span>
               <h2 style={{ fontSize: "40px", fontWeight: 900, color: "var(--text-primary)", letterSpacing: "-1px", lineHeight: "1.2", margin: "12px 0 24px" }}>
                 Sri Lanka's Premier <br />Overseas Recruitment Partner
               </h2>
@@ -107,8 +108,8 @@ export default function Home() {
               </p>
 
               <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
-                <Link href="/about" className="btn-modern">Learn More About Us</Link>
-                <Link href="/contact" className="btn-modern-outline">Contact Our Team</Link>
+                <Link href="/about" className="btn-modern">Learn more about us</Link>
+                <Link href="/contact" className="btn-modern-outline">Contact our team</Link>
               </div>
             </div>
             
@@ -134,104 +135,82 @@ export default function Home() {
         <div style={{ width: "50%", height: "1px", backgroundColor: "rgba(0, 102, 204, 0.12)" }}></div>
       </div>
 
-      {/* ===== WHY CHOOSE US (HEXACORE DRIBBLLE BENTO GRID) ===== */}
-      <section style={{ padding: "100px 0 160px", backgroundColor: "var(--bg-color-secondary)", position: "relative", overflow: "hidden" }}>
-        
-        {/* Subtle background glowing orb */}
-        <div style={{ position: "absolute", top: "-10%", left: "50%", transform: "translateX(-50%)", width: "800px", height: "400px", background: "radial-gradient(ellipse at center, rgba(0, 102, 204, 0.05) 0%, rgba(255,255,255, 0) 70%)", pointerEvents: "none", zIndex: 0 }}></div>
-
-        <div className="widescreen-container" style={{ position: "relative", zIndex: 1 }}>
+      <section className={styles.whyChooseUsCenter} style={{ padding: "60px 0 120px" }}>
+        <div className="container">
           
-          <div style={{ textAlign: "center", marginBottom: "60px" }}>
-            <span className="accent-pill-label" style={{ marginBottom: "16px", display: "inline-flex" }}>Why Choose Us</span>
-            <h2 style={{ fontSize: "46px", fontWeight: 900, color: "var(--text-primary)", letterSpacing: "-1.5px", lineHeight: "1.1", margin: "12px 0 20px" }}>
-              The Al Falah Difference.
+          <div className={styles.sectionHeaderCentered} style={{ marginBottom: '60px' }}>
+            <span className="accent-pill-label">Why choose us</span>
+            <h2 className={styles.titleAlt} style={{ fontSize: '42px', margin: '0', lineHeight: '1.2' }}>
+              Why choose Al Falah Travels & Tours?
             </h2>
           </div>
 
-          <div className="hexa-bento-grid">
+          <div className="row align-items-center">
             
-            {/* Card 1: Rigorous Screening */}
-            <div className="hexa-card hexa-span-2">
-              <div className="hexa-card-content">
-                <h3 className="hexa-title">Rigorous Screening</h3>
-                <p className="hexa-desc">Trade tests, medical clearances, and interviews ensure perfection.</p>
+            {/* Left Features */}
+            <div className="col-lg-4">
+              <div className={styles.featureItemLeft}>
+                <div className={styles.featTextBox}>
+                  <h4 className={styles.featTitleBox}>Government-approved</h4>
+                  <p className={styles.featDescBox}>We are a fully licensed and Government-Approved Recruitment Agency.</p>
+                </div>
+                <div className={styles.featIconBox}><i className="fas fa-file-contract"></i></div>
               </div>
-              <div className="hexa-widget-container">
-                <div className="hexa-widget-avatar-stack">
-                  <div className="hexa-avatar"><i className="fas fa-user-check"></i></div>
-                  <div className="hexa-avatar"><i className="fas fa-file-medical"></i></div>
-                  <div className="hexa-avatar"><i className="fas fa-clipboard-list"></i></div>
+              <div className={styles.featureItemLeft}>
+                <div className={styles.featTextBox}>
+                  <h4 className={styles.featTitleBox}>Fast & Transparent</h4>
+                  <p className={styles.featDescBox}>Experience a fast, transparent, and hassle-free hiring process.</p>
+                </div>
+                <div className={styles.featIconBox}><i className="fas fa-bolt"></i></div>
+              </div>
+              <div className={styles.featureItemLeft}>
+                <div className={styles.featTextBox}>
+                  <h4 className={styles.featTitleBox}>Skilled Candidates</h4>
+                  <p className={styles.featDescBox}>We source highly skilled and thoroughly verified candidates for your roles.</p>
+                </div>
+                <div className={styles.featIconBox}><i className="fas fa-user-check"></i></div>
+              </div>
+            </div>
+
+            {/* Center Image */}
+            <div className="col-lg-4">
+              <div className={styles.centerImageWrapper}>
+                <div className={styles.bgShape1}></div>
+                <div className={styles.bgShape2}></div>
+                <img src="https://xhyre-demo.pbminfotech.com/demo3/wp-content/uploads/sites/5/2024/11/about02-img-03.jpg" alt="Center Human Resources" className={styles.centerImg} />
+              </div>
+            </div>
+
+            {/* Right Features */}
+            <div className="col-lg-4">
+              <div className={styles.featureItemRight}>
+                <div className={styles.featIconBox}><i className="fas fa-hand-holding-usd"></i></div>
+                <div className={styles.featTextBox}>
+                  <h4 className={styles.featTitleBox}>Cost-Effective</h4>
+                  <p className={styles.featDescBox}>We offer highly competitive and cost-effective recruitment packages.</p>
+                </div>
+              </div>
+              <div className={styles.featureItemRight}>
+                <div className={styles.featIconBox}><i className="fas fa-globe-asia"></i></div>
+                <div className={styles.featTextBox}>
+                  <h4 className={styles.featTitleBox}>Strong Network</h4>
+                  <p className={styles.featDescBox}>Benefit from our massive and strong network across the Middle East.</p>
+                </div>
+              </div>
+              <div className={styles.featureItemRight}>
+                <div className={styles.featIconBox}><i className="fas fa-history"></i></div>
+                <div className={styles.featTextBox}>
+                  <h4 className={styles.featTitleBox}>Decades of Experience</h4>
+                  <p className={styles.featDescBox}>Leveraging decades of extensive experience in overseas placement.</p>
                 </div>
               </div>
             </div>
-
-            {/* Card 2: GCC Partnerships */}
-            <div className="hexa-card hexa-span-2">
-              <div className="hexa-card-content">
-                <h3 className="hexa-title">GCC Partnerships</h3>
-                <p className="hexa-desc">Direct recruitment across KSA, UAE, Qatar & Kuwait.</p>
-              </div>
-              <div className="hexa-widget-container">
-                 <div className="hexa-widget-globe">
-                    <i className="fas fa-globe-americas"></i>
-                 </div>
-              </div>
-            </div>
-
-            {/* Card 3: Zero Delays */}
-            <div className="hexa-card hexa-span-2">
-              <div className="hexa-card-content">
-                <h3 className="hexa-title">Zero Delays</h3>
-                <p className="hexa-desc">Optimized end-to-end processing and flight mobilization.</p>
-              </div>
-              <div className="hexa-widget-container">
-                 <div className="hexa-widget-chart">
-                    <div className="chart-bar" style={{height: "40%"}}></div>
-                    <div className="chart-bar" style={{height: "70%"}}></div>
-                    <div className="chart-bar" style={{height: "100%", background: "var(--primary-color)", boxShadow: "0 0 10px rgba(0, 102, 204, 0.5)"}}></div>
-                    <div className="chart-bar" style={{height: "85%"}}></div>
-                 </div>
-              </div>
-            </div>
-
-            {/* Card 4: SLBFE License */}
-            <div className="hexa-card hexa-span-3 hexa-flex-row">
-              <div className="hexa-card-content">
-                <h3 className="hexa-title">SLBFE License 2888</h3>
-                <p className="hexa-desc">Fully government-approved. Proud recipient of the SLBFE 3-Star Golden Award for compliance and excellence.</p>
-              </div>
-              <div className="hexa-widget-container">
-                  <div className="hexa-widget-badge">
-                     <i className="fas fa-award"></i>
-                     <div className="badge-glow"></div>
-                  </div>
-              </div>
-            </div>
-
-            {/* Card 5: Dedicated Support */}
-            <div className="hexa-card hexa-span-3 hexa-flex-row">
-              <div className="hexa-card-content">
-                <h3 className="hexa-title">Dedicated Support</h3>
-                <p className="hexa-desc">We stay with you from the first consultation to post-deployment support and check-ins.</p>
-              </div>
-              <div className="hexa-widget-container">
-                  <div className="hexa-widget-chat">
-                     <div className="chat-bubble left">Your requirements?</div>
-                     <div className="chat-bubble right">We need 50 engineers.</div>
-                     <div className="chat-typing">
-                        <span></span><span></span><span></span>
-                     </div>
-                  </div>
-              </div>
-            </div>
-
           </div>
         </div>
       </section>
 
       {/* ===== SECTION 3: SPECIALIZED INDUSTRIES (DYNAMIC BACKGROUND LIST) ===== */}
-      <section style={{ position: "relative", padding: "120px 0 100px", backgroundColor: "#050a11", overflow: "hidden" }}>
+      <section style={{ position: "relative", padding: "120px 0", backgroundColor: "#050a11", overflow: "hidden" }}>
         
         {/* Dynamic Backgrounds */}
         {[
@@ -268,8 +247,8 @@ export default function Home() {
             
             {/* Left Column: Massive Typography List */}
             <div className="col-lg-7">
-              <span style={{ color: "#ffffff", fontSize: "14px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "2px", marginBottom: "20px", display: "block" }}>
-                Sectors We Serve
+              <span className="accent-pill-label text-white-force" style={{ marginBottom: "20px" }}>
+                Sectors we serve
               </span>
               <h2 className="text-white-force" style={{ fontSize: "46px", fontWeight: 900, letterSpacing: "-1.5px", lineHeight: "1.1", margin: "0 0 24px" }}>
                 Our Specialized <br/><span style={{ color: "var(--primary-color)" }}>Industries</span>
@@ -470,7 +449,7 @@ export default function Home() {
       <RecruitmentProcess />
 
       {/* ===== SECTION 10: ACCREDITATIONS & STATS ===== */}
-      <section style={{ padding: "100px 0", backgroundColor: "var(--secondary-color)", color: "#ffffff", position: "relative", overflow: "hidden" }}>
+      <section style={{ padding: "120px 0", backgroundColor: "var(--secondary-color)", color: "#ffffff", position: "relative", overflow: "hidden" }}>
         
         {/* Decorative Background Elements & Geometric Shapes */}
         <div style={{ position: "absolute", top: "-20%", left: "-10%", width: "50%", height: "150%", background: "radial-gradient(ellipse at center, rgba(0, 102, 204, 0.15) 0%, transparent 70%)", pointerEvents: "none" }}></div>
@@ -541,6 +520,26 @@ export default function Home() {
                   <span style={{ fontSize: "14px", fontWeight: 600, color: "#5f6368" }}>Google Reviewed Agency</span>
                 </div>
               </div>
+
+              {/* Chairman & Award Images */}
+              <div style={{ position: "relative", marginTop: "50px", maxWidth: "450px" }}>
+                <img 
+                  src="/assets/images/chairman_receiving_award.png" 
+                  alt="Chairman receiving SLBFE award" 
+                  style={{ width: "100%", borderRadius: "12px", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }} 
+                />
+                <img 
+                  src="/assets/images/award_no_bg_white.png" 
+                  alt="3-Star Golden Award" 
+                  style={{ 
+                    position: "absolute", 
+                    bottom: "-30px", 
+                    right: "-30px", 
+                    width: "45%", 
+                    filter: "drop-shadow(0 15px 25px rgba(0,0,0,0.4))"
+                  }} 
+                />
+              </div>
             </div>
 
             {/* Right Side: Key Placement Numbers (Stats) */}
@@ -583,9 +582,9 @@ export default function Home() {
       </section>
 
       {/* ===== SECTION 9: CLIENT NETWORK & MARQUEE ===== */}
-      <section style={{ padding: "100px 0", backgroundColor: "var(--bg-color-secondary)", overflow: "hidden" }}>
+      <section style={{ padding: "120px 0 180px", backgroundColor: "var(--bg-color-secondary)", overflow: "hidden" }}>
         <div className="widescreen-container" style={{ textAlign: "center", marginBottom: "60px" }}>
-          <span className="accent-pill-label">Our Client Network</span>
+          <span className="accent-pill-label">Our client network</span>
           <h2 style={{ fontSize: "40px", fontWeight: 900, marginBottom: "20px", lineHeight: "1.2", letterSpacing: "-1px" }}>
             Connecting across <span className="demo3-highlight">Middle East</span> & Beyond
           </h2>
@@ -608,7 +607,9 @@ export default function Home() {
                 </div>
               </div>
             ))}
-            {/* Duplicate for infinite loop */}
+          </div>
+          {/* Duplicate for infinite loop */}
+          <div className="marquee-content" aria-hidden="true">
             {companies.slice(0, Math.ceil(companies.length / 2)).map((company, idx) => (
               <div key={`dup-${idx}`} className="client-card-modern">
                 <div className="client-logo-placeholder" style={{ background: `linear-gradient(135deg, hsl(${(idx * 40) % 360}, 10%, 95%), #fff)` }}>
@@ -637,7 +638,9 @@ export default function Home() {
                 </div>
               </div>
             ))}
-            {/* Duplicate for infinite loop */}
+          </div>
+          {/* Duplicate for infinite loop */}
+          <div className="marquee-content" aria-hidden="true" style={{ animationDirection: "reverse", animationDuration: "45s" }}>
             {companies.slice(Math.ceil(companies.length / 2)).map((company, idx) => (
               <div key={`dup2-${idx}`} className="client-card-modern">
                 <div className="client-logo-placeholder" style={{ background: `linear-gradient(135deg, hsl(${((idx + 10) * 40) % 360}, 10%, 95%), #fff)` }}>

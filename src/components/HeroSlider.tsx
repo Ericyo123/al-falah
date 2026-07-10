@@ -15,7 +15,7 @@ export default function HeroSlider() {
           {/* Left-aligned Text Content */}
           <div className="execora-hero-content">
             <h1 className="execora-hero-title">
-              Connect with the Global Market.
+              Connect with the Global Market
             </h1>
             <p className="execora-hero-desc">
               We source and deploy Sri Lanka's finest skilled professionals, technicians, and hospitality staff to leading GCC employers.
