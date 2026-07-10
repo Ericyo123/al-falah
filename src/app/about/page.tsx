@@ -244,9 +244,9 @@ export default function AboutPage() {
       <section className={styles.whyChooseUsCenter}>
         <div className="container">
           
-          <div className={styles.sectionHeaderCentered} style={{ marginBottom: '60px' }}>
+          <div className={`${styles.sectionHeaderCentered} ${styles.whyChooseHeader}`}>
             <span className={styles.subtitleAlt} style={{ display: 'inline-block', marginBottom: '15px' }}>/ WHY CHOOSE US? /</span>
-            <h2 className={styles.titleAlt} style={{ fontSize: '42px', margin: '0', lineHeight: '1.2' }}>
+            <h2 className={`${styles.titleAlt} ${styles.whyChooseTitle}`}>
               Why Choose Al Falah Travels & Tours?
             </h2>
           </div>
@@ -326,7 +326,7 @@ export default function AboutPage() {
           <div className={styles.sectionHeaderFlex}>
             <div>
               <span className={styles.subtitleAlt} style={{ display: 'inline-block', marginBottom: '15px' }}>/ FEEDBACK /</span>
-              <h2 className={styles.titleAlt} style={{ fontSize: '42px', margin: '0', lineHeight: '1.2' }}>
+              <h2 className={`${styles.titleAlt} ${styles.feedbackTitle}`}>
                 What Our Happy <span className={styles.textBlueAlt}>Client</span> Say<br/> About Us
               </h2>
             </div>
